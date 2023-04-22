@@ -41,7 +41,7 @@ body{
 
 .pokemon-container{
     height: 100%;
-    width: 70%;
+    width: 100%;
     /* background-color: azure; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -49,8 +49,11 @@ body{
 }
 
 .pokemon-container>div{
-    width: 16rem;
-    height: 14rem;
+    width: 10vw;
+    min-height: 10rem;
+    min-height: 10*16/14rem;
+    /* height: 14rem; */
+    aspect-ratio: 16/14;
     border-radius: 2rem;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     margin: 2rem;
